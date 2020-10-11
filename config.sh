@@ -19,3 +19,4 @@ sudo apt-get install build-essential vim git
 
 # Cleanup.
 sudo apt-get autoremove
+sudo apt-get clean
