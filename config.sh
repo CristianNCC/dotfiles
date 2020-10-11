@@ -8,6 +8,10 @@ sudo echo -e "\nalias pip=pip3\n" >> ~/.bashrc
 rm ~/.bashrc
 ln -s ~/repos/dotfiles/.bashrc ~/.bashrc
 
+# And the .vimrc file.
+rm ~/.vimrc
+ln -s ~/repos/dotfiles/.vimrc ~/.vimrc
+
 # Update and upgrade.
 sudo apt-get update
 sudo apt-get upgrade 
