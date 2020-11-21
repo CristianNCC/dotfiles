@@ -17,9 +17,7 @@ sudo apt-get update
 sudo apt-get upgrade 
 
 # Basic build tools.
-sudo apt-get install build-essential vim git
-
-
+sudo apt-get install build-essential vim git tree
 
 # Cleanup.
 sudo apt-get autoremove
