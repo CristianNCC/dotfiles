@@ -12,8 +12,11 @@ ln -s ~/repos/dotfiles/.vimrc ~/.vimrc
 sudo apt-get update
 sudo apt-get upgrade 
 
-# Basic tools.
-sudo apt-get install build-essential vim git tree
+# Basic programming tools.
+sudo apt-get install build-essential vim git
+
+# Misc tools.
+sudo apt-get install curl tree
 
 # Cleanup.
 sudo apt-get autoremove
