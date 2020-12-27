@@ -16,7 +16,7 @@ sudo apt-get upgrade
 sudo apt-get install build-essential vim git
 
 # Misc tools.
-sudo apt-get install curl tree
+sudo apt-get install curl tree mlocate
 
 # Cleanup.
 sudo apt-get autoremove
