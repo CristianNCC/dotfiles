@@ -15,7 +15,7 @@ sudo apt-get upgrade
 # Basic programming tools.
 sudo apt-get install build-essential vim git
 
-# Analyis tools
+# Analyis tools.
 sudo apt-get install clang-tools valgrind
 
 # Misc tools.
