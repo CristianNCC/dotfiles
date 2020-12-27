@@ -1,0 +1,13 @@
+#!/bin/bash
+
+alias cl="clear"
+alias python="python3"
+alias pip="pip3"
+alias untar="tar -zxvf"
+alias cp="cp -iv"
+alias ls="ls --color"
+alias mv="mv iv" 
+alias rm="rm -v" 
+alias mkdir="mkdir -pv" 
+alias repos="cd ~/repos"
+alias dotfiles="cd ~/repos/dotfiles"
