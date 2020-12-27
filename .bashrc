@@ -116,7 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Easier python.
 alias python=python3
 alias pip=pip3
 
+# Only display last directory in the path.
 PROMPT_DIRTRIM=1
+
+# Use vimkeys.
+set -o vi
