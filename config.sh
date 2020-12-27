@@ -15,6 +15,9 @@ sudo apt-get upgrade
 # Basic programming tools.
 sudo apt-get install build-essential vim git
 
+# Analyis tools
+sudo apt-get install clang-tools valgrind
+
 # Misc tools.
 sudo apt-get install curl tree mlocate
 
