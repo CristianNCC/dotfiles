@@ -152,4 +152,8 @@ nnoremap <C-L> :nohl<CR><C-L>
 " Matching braces.
 inoremap { {<CR>}<Esc>ko
 inoremap ( ()<Left>
+
+noremap l h
+noremap ; l
+noremap h ; 
 "------------------------------------------------------------
