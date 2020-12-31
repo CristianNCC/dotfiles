@@ -9,7 +9,7 @@ rm ~/.vimrc
 ln -s ~/repos/dotfiles/.vimrc ~/.vimrc
 
 rm ~/.aliasrc
-ls -s ~/repos/dotfiles/.aliasrc ~/.aliasrc
+ln -s ~/repos/dotfiles/.aliasrc ~/.aliasrc
 
 # Update and upgrade.
 sudo apt-get update
