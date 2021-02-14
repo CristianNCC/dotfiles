@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Optional: Vbox guest additions
+# sudo apt-get install virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+
 # Setup the .bashrc file.
 rm ~/.bashrc
 ln -s ~/repos/dotfiles/.bashrc ~/.bashrc
