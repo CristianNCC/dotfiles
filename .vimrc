@@ -157,4 +157,6 @@ imap jj <Esc>
 noremap l h
 noremap ; l
 noremap h ; 
+
+set backspace=indent,eol,start
 "------------------------------------------------------------
