@@ -151,12 +151,8 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 " Matching braces.
 inoremap { {<CR>}<Esc>ko
-inoremap ( ()<Left>
+inoremap ( ()<Right>
 imap jj <Esc>
-
-noremap l h
-noremap ; l
-noremap h ; 
 
 set backspace=indent,eol,start
 "------------------------------------------------------------
