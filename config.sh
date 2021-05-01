@@ -27,6 +27,12 @@ sudo apt-get install clang-tools valgrind
 # Misc tools.
 sudo apt-get install curl tree mlocate
 
+# Vim Addons.
+
+# SuperTab
+mkdir -p ~/.vim/pack/plugins/start
+git clone --depth=1 https://github.com/ervandew/supertab.git ~/.vim/pack/plugins/start/supertab
+
 # Cleanup.
 sudo apt-get autoremove
 sudo apt-get clean
