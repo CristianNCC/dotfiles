@@ -3,20 +3,23 @@
 # Optional: Vbox guest additions
 # sudo apt-get install virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
 
-# Setup the .bashrc file.
+###### Setup dotfiles #####
+
 rm ~/.bashrc
 ln -s ~/repos/dotfiles/.bashrc ~/.bashrc
 
-# And the .vimrc file.
 rm ~/.vimrc
 ln -s ~/repos/dotfiles/.vimrc ~/.vimrc
 
 rm ~/.aliasrc
 ln -s ~/repos/dotfiles/.aliasrc ~/.aliasrc
 
-# Update and upgrade.
+##### Update and upgrade #####
+
 sudo apt-get update
 sudo apt-get upgrade 
+
+##### Tools #####
 
 # Basic programming tools.
 sudo apt-get install build-essential vim git
@@ -27,9 +30,9 @@ sudo apt-get install clang-tools valgrind
 # Misc tools.
 sudo apt-get install curl tree mlocate
 
-# Vim Addons.
+###### Vim Addons #####
 
-# SuperTab
+# SuperTab.
 mkdir -p ~/.vim/pack/plugins/start
 git clone --depth=1 https://github.com/ervandew/supertab.git ~/.vim/pack/plugins/start/supertab
 
