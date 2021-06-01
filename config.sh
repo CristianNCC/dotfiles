@@ -36,6 +36,6 @@ sudo apt-get install curl tree mlocate
 mkdir -p ~/.vim/pack/plugins/start
 git clone --depth=1 https://github.com/ervandew/supertab.git ~/.vim/pack/plugins/start/supertab
 
-# Cleanup.
+##### Cleanup #####
 sudo apt-get autoremove
 sudo apt-get clean
