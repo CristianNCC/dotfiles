@@ -123,4 +123,4 @@ fi
 PROMPT_DIRTRIM=1
 
 # Only for WSL
-# cd /mnt/c/Users/Cristi/Desktop
+cd /mnt/c/Users/Cristi/Desktop

@@ -149,8 +149,6 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
-" Matching braces.
-inoremap { {<CR>}<Esc>ko
 imap jj <Esc>
 
 set backspace=indent,eol,start
