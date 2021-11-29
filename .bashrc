@@ -121,6 +121,3 @@ fi
 
 # Only display last directory in the path.
 PROMPT_DIRTRIM=1
-
-# Only for WSL
-cd /mnt/c/Users/Cristi/Desktop
