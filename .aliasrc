@@ -12,12 +12,12 @@ alias rm="rm -v"
 alias mkdir="mkdir -pv" 
 alias cl="clear"
 
-alias update="sudo apt-get update && sudo apt-get upgrade"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
 
 alias repos="cd ~/repos"
 alias dotfiles="cd ~/repos/dotfiles"
 
 alias iotop="iotop -oPa"
 
-alias sc="scan-build"
 function memcheck() { valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind-out.txt ./$1; }
