@@ -10,7 +10,7 @@ alias ls="ls --color"
 alias mv="mv -iv" 
 alias rm="rm -v" 
 alias mkdir="mkdir -pv" 
-alias cl="clear"
+alias cls="clear"
 
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get upgrade"
