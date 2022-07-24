@@ -150,6 +150,16 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+noremap <Up>        <nop>
+noremap <Down>      <nop>
+noremap <Left>      <nop>
+noremap <Right>     <nop>
+
+inoremap <Up>       <nop>
+inoremap <Down>     <nop>
+inoremap <Left>     <nop>
+inoremap <Right>    <nop>
+
 imap jj <Esc>
 
 set backspace=indent,eol,start
