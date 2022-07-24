@@ -28,7 +28,7 @@ sudo apt-get install build-essential vim git
 sudo apt-get install clang-tools valgrind
 
 # Misc tools.
-sudo apt-get install curl tree mlocate iotop nasm 
+sudo apt-get install curl tree mlocate iotop nasm bison diffutils texinfo flex
 
 ###### Vim Addons #####
 
