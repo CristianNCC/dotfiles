@@ -39,9 +39,6 @@ sudo apt-get install diffutils texinfo flex libgmp-dev
 mkdir -p ~/.vim/pack/plugins/start
 git clone --depth=1 https://github.com/ervandew/supertab.git ~/.vim/pack/plugins/start/supertab
 
-##### Ubuntu debloat #####
-sudo apt purge gnome-2048 aisleriot atomix gnome-chess five-or-more hitori iagno gnome-klotski lightsoff gnome-mahjongg gnome-mines gnome-nibbles quadrapassel four-in-a-row gnome-robots gnome-sudoku swell-foop tali gnome-taquin gnome-tetravex -y
-
 ##### Cleanup #####
 sudo apt-get autoremove
 sudo apt-get clean
