@@ -5,14 +5,14 @@
 
 ###### Setup dotfiles #####
 
-rm ~/.bashrc
-ln -s ~/repos/dotfiles/.bashrc ~/.bashrc
+sudo rm ~/.bashrc
+sudo ln -s ~/repos/dotfiles/.bashrc ~/.bashrc
 
-rm ~/.vimrc
-ln -s ~/repos/dotfiles/.vimrc ~/.vimrc
+sudo rm ~/.vimrc
+sudo ln -s ~/repos/dotfiles/.vimrc ~/.vimrc
 
-rm ~/.aliasrc
-ln -s ~/repos/dotfiles/.aliasrc ~/.aliasrc
+sudo rm ~/.aliasrc
+sudo ln -s ~/repos/dotfiles/.aliasrc ~/.aliasrc
 
 ##### Update and upgrade #####
 
@@ -32,12 +32,6 @@ sudo apt-get install curl tree mlocate iotop nasm bison
 
 # Cross compiler dependencies
 sudo apt-get install diffutils texinfo flex libgmp-dev
-
-###### Vim Addons #####
-
-# SuperTab.
-mkdir -p ~/.vim/pack/plugins/start
-git clone --depth=1 https://github.com/ervandew/supertab.git ~/.vim/pack/plugins/start/supertab
 
 ##### Cleanup #####
 sudo apt-get autoremove
