@@ -22,11 +22,7 @@ set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
 
-map <F3> :Dox<CR>
+let g:clang_library_path='/usr/lib/llvm-14/lib/libclang-14.so.1'
+let g:clang_user_options='|| exit 0'
+
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
-
-map <F5> :make run<CR>
-map <F6> :make<CR>
-map <S-F6> :make clean all<CR>
-
-map <F12> <C-]>

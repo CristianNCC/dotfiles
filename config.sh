@@ -25,9 +25,8 @@ sudo apt install clang-tools valgrind
 # Vim plugins
 mkdir -pv ~/.vim/pack/git-plugins/start
 cd ~/.vim/pack/git-plugins/start
+
 git clone --depth=1 https://github.com/bfrg/vim-cpp-modern
-git clone https://github.com/vim-scripts/OmniCppComplete.git
-git clone https://github.com/vim-scripts/DoxygenToolkit.vim.git
 
 ##### Cleanup #####
 sudo apt autoremove
