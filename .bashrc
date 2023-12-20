@@ -118,6 +118,3 @@ fi
 
 # Load aliases.
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
-
-# Only display last directory in the path.
-PROMPT_DIRTRIM=1

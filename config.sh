@@ -2,19 +2,14 @@
 
 ##### Setup #####
 
-sudo rm ~/.bashrc
-sudo ln -s ~/repos/dotfiles/.bashrc ~/.bashrc
+sudo ln -snf ~/repos/dotfiles/.bashrc ~/.bashrc
 
-sudo rm ~/.vimrc
-sudo ln -s ~/repos/dotfiles/.vimrc ~/.vimrc
+sudo ln -snf ~/repos/dotfiles/.vimrc ~/.vimrc
 
-sudo rm ~/.aliasrc
-sudo ln -s ~/repos/dotfiles/.aliasrc ~/.aliasrc
+sudo ln -snf ~/repos/dotfiles/.aliasrc ~/.aliasrc
 
 sudo apt update
 sudo apt upgrade 
-
-##### Tools #####
 
 # Basic programming tools
 sudo apt install build-essential vim git
