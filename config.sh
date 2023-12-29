@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Setup #
+# Setup 
 
 sudo ln -snf ~/repos/dotfiles/.bashrc ~/.bashrc
 
@@ -17,6 +17,6 @@ sudo apt install build-essential vim git
 # Analyis tools
 sudo apt install clang-tools valgrind
 
-# Cleanup #
+# Cleanup 
 sudo apt autoremove
 sudo apt clean
