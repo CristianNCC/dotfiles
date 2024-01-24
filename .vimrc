@@ -16,8 +16,3 @@ set showmatch
 
 set visualbell
 set t_vb=
-
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
