@@ -118,3 +118,5 @@ fi
 
 # Load aliases.
 [ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"
+
+set -o vi
