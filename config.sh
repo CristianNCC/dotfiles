@@ -13,6 +13,7 @@ sudo apt upgrade
 
 # Basic programming tools
 sudo apt install build-essential vim git
+sudo apt install libasound2-dev mesa-common-dev libx11-dev libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev libglu1-mesa-dev
 
 # Analyis tools
 sudo apt install clang-tools valgrind
