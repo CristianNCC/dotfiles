@@ -11,6 +11,7 @@ set shiftwidth=4
 set textwidth=120
 set t_Co=256
 set number
+set relativenumber
 set showmatch
 
 set visualbell
