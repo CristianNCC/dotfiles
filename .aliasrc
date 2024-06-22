@@ -15,8 +15,6 @@ alias cls="clear"
 alias repos="cd ~/repos"
 alias dotfiles="cd ~/repos/dotfiles"
 
-alias iotop="iotop -oPa"
-
 # WSL specific
 alias clip="clip.exe"
 
