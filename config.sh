@@ -12,7 +12,7 @@ sudo apt update
 sudo apt upgrade 
 
 # Basic programming tools
-sudo apt install build-essential vim git cmake
+sudo apt install build-essential nasm qemu vim git cmake
 
 # Analyis tools
 sudo apt install clang-tools valgrind
