@@ -28,6 +28,7 @@ alias ll='eza -lh --group-directories-first'
 alias la='eza -lah --group-directories-first'
 alias lt='eza --tree --level=2'
 alias l='eza -1'
+alias cls=clear
 # <<< my-setup aliases <
 EOF
     echo "    aliases added to ~/.bashrc"
