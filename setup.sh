@@ -54,6 +54,38 @@ else
 fi
 
 
+echo ">>> Configuring SSH agent auto-start..."
+SSH_MARKER="# >>> ssh-agent >>>"
+
+if ! grep -qF "$SSH_MARKER" ~/.bashrc; then
+    cat >> ~/.bashrc <<'EOF'
+
+# >>> ssh-agent >>>
+SSH_ENV="$HOME/.ssh/agent-environment"
+
+start_ssh_agent () {
+    ssh-agent -s > "$SSH_ENV"
+    chmod 600 "$SSH_ENV"
+    . "$SSH_ENV" > /dev/null
+    ssh-add ~/.ssh/id_ed25519 2>/dev/null
+}
+
+if [ -f "$SSH_ENV" ]; then
+    . "$SSH_ENV" > /dev/null
+    if ! ps -p "$SSH_AGENT_PID" > /dev/null 2>&1; then
+        start_ssh_agent
+    fi
+else
+    start_ssh_agent
+fi
+# <<< ssh-agent <
+EOF
+    echo "    ssh-agent auto-start added to ~/.bashrc"
+else
+    echo "    ssh-agent auto-start already present, skipping"
+fi
+
+
 echo ">>> Installing C/C++ build toolchain..."
 sudo dnf install -y @development-tools
 sudo dnf install -y \
