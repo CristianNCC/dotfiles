@@ -105,6 +105,10 @@ sudo dnf install -y \
     clang-tools-extra
 
 
+echo ">>> Configuring git editor..."
+git config --global core.editor vim
+
+
 echo ">>> Installing vim-plug..."
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
