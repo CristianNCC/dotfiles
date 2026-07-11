@@ -13,7 +13,7 @@ sudo fwupdmgr update -y || true
 
 
 echo ">>> Installing CLI tools..."
-sudo dnf install -y eza ripgrep fzf
+sudo dnf install -y eza ripgrep fzf bat
 
 
 echo ">>> Configuring shell aliases..."
@@ -29,6 +29,7 @@ alias la='eza -lah --group-directories-first'
 alias lt='eza --tree --level=2'
 alias l='eza -1'
 alias cls=clear
+alias cat=bat
 # <<< my-setup aliases <
 EOF
     echo "    aliases added to ~/.bashrc"
