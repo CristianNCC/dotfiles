@@ -98,6 +98,14 @@ sudo dnf install -y \
     pkgconf-pkg-config
 
 
+echo ">>> Installing C/C++ testing and sanitizer libraries..."
+sudo dnf install -y \
+    gtest-devel \
+    gmock-devel \
+    libasan \
+    libubsan
+
+
 echo ">>> Installing Vim and dependencies..."
 sudo dnf install -y \
     vim-enhanced \

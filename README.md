@@ -16,6 +16,7 @@
 - Adds fzf key-bindings/completion sourcing to `~/.bashrc`
 - Adds ssh-agent auto-start to `~/.bashrc`, loading `~/.ssh/id_ed25519`
 - Installs a C/C++ build toolchain: `@development-tools`, `gcc-c++`, `glibc-devel`, `libstdc++-devel`, `cmake`, `ninja-build`, `pkgconf-pkg-config`
+- Installs C/C++ testing and sanitizer libraries: `gtest-devel`, `gmock-devel`, `libasan`, `libubsan`
 - Installs Vim and dependencies: `vim-enhanced`, `nodejs`, `clang-tools-extra`
 - Sets `git config --global core.editor vim`
 - Installs `vim-plug` and writes `~/.vimrc` (only if one doesn't already exist)
