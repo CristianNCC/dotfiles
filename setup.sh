@@ -13,7 +13,7 @@ sudo fwupdmgr update -y || true
 
 
 echo ">>> Installing CLI tools..."
-sudo dnf install -y eza ripgrep fzf bat
+sudo dnf install -y eza ripgrep fzf bat gh
 
 
 echo ">>> Configuring shell aliases..."

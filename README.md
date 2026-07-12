@@ -11,7 +11,7 @@
 ## What it does
 
 - Updates system packages (`dnf upgrade`) and firmware (`fwupdmgr`)
-- Installs CLI tools: `eza`, `ripgrep`, `fzf`, `bat`
+- Installs CLI tools: `eza`, `ripgrep`, `fzf`, `bat`, `gh`
 - Adds shell aliases to `~/.bashrc` (`ls`/`ll`/`la`/`lt`/`l` via `eza`, `cls` for clear, `cat` for `bat`)
 - Adds fzf key-bindings/completion sourcing to `~/.bashrc`
 - Adds ssh-agent auto-start to `~/.bashrc`, loading `~/.ssh/id_ed25519`
