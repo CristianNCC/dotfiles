@@ -12,15 +12,28 @@ sudo fwupdmgr refresh --force || true
 sudo fwupdmgr update -y || true
 
 
-echo ">>> Installing CLI tools..."
-sudo dnf install -y eza ripgrep fzf bat gh
+echo ">>> Installing packages..."
+sudo dnf install -y \
+    eza ripgrep fzf bat gh \
+    @development-tools \
+    gcc-c++ glibc-devel libstdc++-devel cmake ninja-build pkgconf-pkg-config \
+    gtest-devel gmock-devel libasan libubsan \
+    vim-enhanced nodejs clang-tools-extra
 
 
-echo ">>> Configuring shell aliases..."
-MARKER="# >>> my-setup aliases >>>"
+echo ">>> Configuring ~/.bashrc..."
 
-if ! grep -qF "$MARKER" ~/.bashrc; then
-    cat >> ~/.bashrc <<'EOF'
+append_once () {
+    local marker="$1" label="$2"
+    if grep -qF "$marker" ~/.bashrc 2>/dev/null; then
+        echo "    $label already present, skipping"
+        return
+    fi
+    cat >> ~/.bashrc
+    echo "    $label added to ~/.bashrc"
+}
+
+append_once "# >>> my-setup aliases >>>" "aliases" <<'EOF'
 
 # >>> my-setup aliases >>>
 alias ls='eza --group-directories-first'
@@ -32,34 +45,16 @@ alias cls=clear
 alias cat=bat
 # <<< my-setup aliases <
 EOF
-    echo "    aliases added to ~/.bashrc"
-else
-    echo "    aliases already present, skipping"
-fi
 
-
-echo ">>> Configuring fzf shell integration..."
-FZF_MARKER="# >>> fzf integration >>>"
-
-if ! grep -qF "$FZF_MARKER" ~/.bashrc; then
-    cat >> ~/.bashrc <<'EOF'
+append_once "# >>> fzf integration >>>" "fzf integration" <<'EOF'
 
 # >>> fzf integration >>>
 [ -f /usr/share/fzf/shell/key-bindings.bash ] && source /usr/share/fzf/shell/key-bindings.bash
 [ -f /usr/share/fzf/shell/completion.bash ] && source /usr/share/fzf/shell/completion.bash
 # <<< fzf integration <
 EOF
-    echo "    fzf integration added to ~/.bashrc"
-else
-    echo "    fzf integration already present, skipping"
-fi
 
-
-echo ">>> Configuring SSH agent auto-start..."
-SSH_MARKER="# >>> ssh-agent >>>"
-
-if ! grep -qF "$SSH_MARKER" ~/.bashrc; then
-    cat >> ~/.bashrc <<'EOF'
+append_once "# >>> ssh-agent >>>" "ssh-agent auto-start" <<'EOF'
 
 # >>> ssh-agent >>>
 SSH_ENV="$HOME/.ssh/agent-environment"
@@ -81,36 +76,6 @@ else
 fi
 # <<< ssh-agent <
 EOF
-    echo "    ssh-agent auto-start added to ~/.bashrc"
-else
-    echo "    ssh-agent auto-start already present, skipping"
-fi
-
-
-echo ">>> Installing C/C++ build toolchain..."
-sudo dnf install -y @development-tools
-sudo dnf install -y \
-    gcc-c++ \
-    glibc-devel \
-    libstdc++-devel \
-    cmake \
-    ninja-build \
-    pkgconf-pkg-config
-
-
-echo ">>> Installing C/C++ testing and sanitizer libraries..."
-sudo dnf install -y \
-    gtest-devel \
-    gmock-devel \
-    libasan \
-    libubsan
-
-
-echo ">>> Installing Vim and dependencies..."
-sudo dnf install -y \
-    vim-enhanced \
-    nodejs \
-    clang-tools-extra
 
 
 echo ">>> Configuring git editor..."
